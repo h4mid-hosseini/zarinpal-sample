@@ -70,5 +70,5 @@ def verify(request):
         if response_json['Status'] == 100:
             return JsonResponse({'status':'success-payment'})
         else:
-            return redirect({'status':'failed-payment'})
+            return JsonResponse({'status':'failed-payment'})
     return JsonResponse(response.json())

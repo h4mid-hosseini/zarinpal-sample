@@ -15,10 +15,10 @@ ZP_API_REQUEST = f"https://sandbox.zarinpal.com/pg/rest/WebGate/PaymentRequest.j
 ZP_API_VERIFY = f"https://sandbox.zarinpal.com/pg/rest/WebGate/PaymentVerification.json"
 ZP_API_STARTPAY = f"https://sandbox.zarinpal.com/pg/StartPay/"
 MERCHANT = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
-def send_request(request):
 
-    
-    
+
+
+def send_request(request):    
     data = {
         "MerchantID": MERCHANT,
         "Amount": amount,
